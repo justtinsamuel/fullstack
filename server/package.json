@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon app.js",
+    "createDB": "npx sequelize-cli db:create",
+    "migrateDB": "npx sequelize-cli db:migrate",
+    "DB": "npm run createDB && npm run migrateDB",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
