@@ -11,7 +11,6 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Item.belongsTo(models.User);
       Item.belongsTo(models.Type);
-      Item.belongsTo(models.Profile);
       Item.belongsTo(models.Brand);
     }
   }
