@@ -1,4 +1,4 @@
-const { BrandController } = require("../controllers");
+const { BrandController } = require("../controllers/BrandControllers");
 const brandRouter = require("express").Router();
 
 brandRouter.get("/", BrandController.getBrands);

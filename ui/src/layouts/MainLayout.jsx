@@ -5,7 +5,6 @@ import { NavBar } from "../components";
 const MainLayout = () => {
     return(
         <div>
-            <h3>To Do Apps</h3>
             <NavBar></NavBar>
             <Outlet></Outlet>
         </div>

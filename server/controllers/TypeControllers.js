@@ -79,4 +79,4 @@ class TypeController {
   }
 }
 
-module.exports = TypeController;
+module.exports = {TypeController};

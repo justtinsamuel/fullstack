@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { HomeItem, CreateItem, DetailItem, UpdateItem, Login } from "../pages";
 import MainLayout from "../layouts/MainLayout";
+import ItemLayout from "../layouts/ItemLayout";
 
 const routers = createBrowserRouter([
   {
@@ -12,19 +13,19 @@ const routers = createBrowserRouter([
         element: <ItemLayout />,
         children: [
           {
-            path: "/",
+            path: "",
             element: <HomeItem />,
           },
           {
-            path: "/create",
+            path: "create",
             element: <CreateItem />,
           },
           {
-            path: "/detail/:id",
+            path: "detail/:id",
             element: <DetailItem />,
           },
           {
-            path: "/update/:id",
+            path: "update/:id",
             element: <UpdateItem />,
           },
         ],

@@ -1,7 +1,7 @@
-const BrandController = require("./BrandController");
-const ItemController = require("./ItemController");
-const TypeController = require("./TypeController");
-const UserController = require("./UserController");
+const BrandController = require("./BrandControllers");
+const ItemController = require("./ItemControllers");
+const TypeController = require("./TypeControllers");
+const UserController = require("./UserControllers");
 
 module.exports = {
   ItemController,

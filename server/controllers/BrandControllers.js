@@ -85,4 +85,4 @@ class BrandController {
   }
 }
 
-module.exports = BrandController;
+module.exports = {BrandController};
