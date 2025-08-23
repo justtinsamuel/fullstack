@@ -6,6 +6,7 @@
     "backdev": "nodemon app.js",
     "createDB": "npx sequelize-cli db:create",
     "migrateDB": "npx sequelize-cli db:migrate",
+    "undoMigrateDB": "npx sequelize-cli db:migrate:undo:all",
     "DB": "npm run createDB && npm run migrateDB",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

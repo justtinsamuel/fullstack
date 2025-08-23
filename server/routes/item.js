@@ -9,6 +9,9 @@ itemRouter.get("/", ItemController.getItems);
 // CREATE item
 itemRouter.post("/", ItemController.add);
 
+// BULK CREATE item
+itemRouter.post("/bulk", ItemController.addBulk);
+
 // GET single item
 itemRouter.get("/:id", authentication, ItemController.getItemById);
 

@@ -22,6 +22,7 @@ class TypeController {
       res.status(500).json(err);
     }
   }
+
   static async add(req, res) {
     try {
       const { name } = req.body;
@@ -51,7 +52,7 @@ class TypeController {
       const { name } = req.body;
       let result = await Type.update(
         {
-          name1,
+          name,
         },
         {
           where: { id },
@@ -79,4 +80,4 @@ class TypeController {
   }
 }
 
-module.exports = {TypeController};
+module.exports = { TypeController };
